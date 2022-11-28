@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const pp = require(`./pp.js`);
+// const pp = require(`./pp.js`);
 
 const port = process.env.PORT || 3000;
 
@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/pp', (req, res) => {
-    pp();
+    // pp();
     res.send('Hello World!!!!!')
 })
 
